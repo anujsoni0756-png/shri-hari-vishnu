@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>श्री हरि विष्णु — ॐ नमो भगवते वासुदेवाय</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Tiro+Devanagari+Hindi:ital@0;1&family=Mukta:wght@400;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --night:#050d24; --deep:#0a1a45; --royal:#12307a; --gold:#e8b84a; --gold-soft:#f6dc95; --text:#e9edf8; --mute:#a9b6d6;
+  box-sizing:border-box; padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
+  color-scheme:dark;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--night:#050d24;--text:#e9edf8}}
+:root[data-theme="dark"]{--night:#050d24;--text:#e9edf8}
+*,*::before,*::after{box-sizing:inherit}
+html{scroll-behavior:smooth;scroll-padding-top:70px}
+body{margin:0;background:var(--night);color:var(--text);font-family:'Mukta','Noto Sans Devanagari',sans-serif;font-size:1.1rem;line-height:1.8;
+  background-image:radial-gradient(circle at 20% 0%,#10286b55,transparent 45%),radial-gradient(circle at 90% 40%,#12307a44,transparent 40%)}
+h1,h2,h3{font-family:'Tiro Devanagari Hindi','Noto Serif Devanagari',serif;font-weight:400;color:var(--gold);line-height:1.3;margin:0}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--gold-soft);outline-offset:3px}
+.wrap{max-width:1080px;margin:0 auto;padding:0 20px}
+nav{position:sticky;top:0;z-index:5;background:#050d24ea;backdrop-filter:blur(8px);border-bottom:1px solid #e8b84a44;padding-top:env(safe-area-inset-top,0px)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:56px;flex-wrap:wrap}
+nav b{font-family:'Tiro Devanagari Hindi',serif;color:var(--gold);font-size:1.25rem;font-weight:400}
+nav ul{display:flex;gap:18px;list-style:none;margin:0;padding:0;flex-wrap:wrap;font-size:1rem}
+nav a{text-decoration:none;color:var(--mute)}nav a:hover{color:var(--gold-soft)}
+.hero{text-align:center;padding:48px 0 64px}
+.hero svg{width:min(78vw,340px);height:auto;display:block;margin:0 auto 12px;filter:drop-shadow(0 0 28px #e8b84a55)}
+.spin{transform-origin:200px 200px;animation:rot 60s linear infinite}
+@keyframes rot{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.spin{animation:none}}
+.hero h1{font-size:clamp(2.4rem,8vw,4.4rem)}
+.hero .sub{color:var(--gold-soft);font-size:clamp(1.1rem,3.4vw,1.5rem);margin:8px 0 22px}
+.mantra-line{display:inline-block;font-family:'Tiro Devanagari Hindi',serif;font-size:clamp(1.3rem,5vw,2rem);color:var(--gold-soft);border:1px solid var(--gold);border-radius:999px;padding:8px 28px;background:#0a1a45cc}
+.btn{display:inline-block;margin-top:26px;background:linear-gradient(135deg,#f6dc95,#d89a22);color:#1a1200;font-weight:600;border:0;border-radius:999px;padding:12px 30px;font:600 1.1rem 'Mukta',sans-serif;text-decoration:none;cursor:pointer}
+.btn.ghost{background:transparent;color:var(--gold-soft);border:1px solid var(--gold)}
+section{padding:56px 0}
+.title{text-align:center;margin-bottom:34px}
+.title h2{font-size:clamp(1.9rem,5vw,2.7rem)}
+.title i{display:block;width:120px;height:14px;margin:10px auto 0;background:radial-gradient(circle,var(--gold) 3px,transparent 4px) center/14px 14px repeat-x;opacity:.9}
+.about{display:grid;gap:28px;grid-template-columns:1.3fr 1fr;align-items:start}
+.about p{margin:0 0 14px;color:var(--text)}
+.names{background:linear-gradient(160deg,var(--deep),#0b1f55);border:1px solid #e8b84a66;border-radius:20px;padding:22px}
+.names h3{font-size:1.4rem;margin-bottom:10px}
+.names span{display:inline-block;margin:4px 4px 0 0;padding:2px 14px;border:1px solid #e8b84a55;border-radius:999px;color:var(--gold-soft);font-size:1rem}
+.grid{display:grid;gap:18px;grid-template-columns:repeat(auto-fit,minmax(230px,1fr))}
+.card{background:linear-gradient(170deg,var(--deep),#081538);border:1px solid #e8b84a44;border-radius:18px;padding:22px}
+.card .ic{font-size:2.3rem;line-height:1}
+.card h3{font-size:1.35rem;margin:8px 0 4px}
+.card p{margin:0;color:var(--mute);font-size:1.02rem;line-height:1.7}
+.avatars{display:grid;gap:16px;grid-template-columns:repeat(auto-fill,minmax(210px,1fr))}
+.av{background:linear-gradient(170deg,#0d2260,#08143a);border:1px solid #e8b84a55;border-radius:18px;padding:18px 18px 20px;position:relative;overflow:hidden}
+.av .n{position:absolute;right:14px;top:8px;font-family:'Tiro Devanagari Hindi',serif;font-size:2.6rem;color:#e8b84a2e}
+.av .em{font-size:2.4rem;line-height:1.2}
+.av h3{font-size:1.3rem}
+.av small{display:block;color:var(--gold-soft);font-size:.92rem;margin-bottom:4px}
+.av p{margin:0;font-size:1rem;line-height:1.65;color:var(--mute)}
+.japa{background:linear-gradient(160deg,#0b1f55,#050d24);border:1px solid var(--gold);border-radius:28px;padding:40px 22px;text-align:center}
+.japa .big{font-family:'Tiro Devanagari Hindi',serif;color:var(--gold-soft);font-size:clamp(1.8rem,7vw,3.2rem);margin:0 0 8px;line-height:1.4}
+.japa p{max-width:620px;margin:0 auto 10px;color:var(--mute)}
+.count{font-family:'Tiro Devanagari Hindi',serif;font-size:3.6rem;color:var(--gold);line-height:1.1;margin:14px 0 0}
+.row{display:flex;gap:12px;justify-content:center;flex-wrap:wrap}
+.pad{height:12px;border-radius:12px;background:linear-gradient(90deg,transparent,#e8b84a,transparent);opacity:.5;margin:0}
+footer{text-align:center;padding:36px 20px 48px;color:var(--mute);border-top:1px solid #e8b84a33}
+footer b{display:block;font-family:'Tiro Devanagari Hindi',serif;font-weight:400;color:var(--gold-soft);font-size:1.4rem}
+.fig{margin:0 0 40px;border:1px solid #e8b84a77;border-radius:24px;overflow:hidden;background:var(--deep);box-shadow:0 0 44px #12307a77}.fig svg{display:block;width:100%;height:auto}.fig figcaption{padding:16px 22px 22px;color:var(--mute);font-size:1.02rem;line-height:1.7}.fig figcaption b{display:block;font-family:'Tiro Devanagari Hindi',serif;font-weight:400;color:var(--gold);font-size:1.45rem;margin-bottom:2px}.fig svg text{font-family:'Tiro Devanagari Hindi','Mukta',serif}
+@media (max-width:760px){.about{grid-template-columns:1fr}nav ul{gap:12px;font-size:.95rem}section{padding:40px 0}}
+</style>
+</head>
+<body>
+<nav><div class="wrap"><b>श्री हरि</b>
+<ul><li><a href="#darshan">दर्शन</a></li><li><a href="#parichay">परिचय</a></li><li><a href="#pratik">प्रतीक</a></li><li><a href="#dashavatar">दशावतार</a></li><li><a href="#mantra">मंत्र</a></li></ul></div></nav>
+
+<header class="hero"><div class="wrap">
+<svg viewBox="0 0 400 400" role="img" aria-label="सुदर्शन चक्र और कमल">
+<defs><radialGradient id="g" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="#12307a"/><stop offset="1" stop-color="#050d24"/></radialGradient>
+<linearGradient id="au" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#f6dc95"/><stop offset="1" stop-color="#c98a1a"/></linearGradient></defs>
+<circle cx="200" cy="200" r="190" fill="url(#g)" stroke="url(#au)" stroke-width="3"/>
+<g class="spin" fill="none" stroke="url(#au)" stroke-width="3">
+<circle cx="200" cy="200" r="170" stroke-dasharray="4 10"/>
+<g id="sp"><path d="M200 30 L212 80 L200 96 L188 80Z" fill="url(#au)"/></g>
+<use href="#sp" transform="rotate(30 200 200)"/><use href="#sp" transform="rotate(60 200 200)"/><use href="#sp" transform="rotate(90 200 200)"/><use href="#sp" transform="rotate(120 200 200)"/><use href="#sp" transform="rotate(150 200 200)"/><use href="#sp" transform="rotate(180 200 200)"/><use href="#sp" transform="rotate(210 200 200)"/><use href="#sp" transform="rotate(240 200 200)"/><use href="#sp" transform="rotate(270 200 200)"/><use href="#sp" transform="rotate(300 200 200)"/><use href="#sp" transform="rotate(330 200 200)"/>
+<circle cx="200" cy="200" r="118"/><circle cx="200" cy="200" r="104" stroke-width="1.5"/></g>
+<g fill="#0a1a45" stroke="url(#au)" stroke-width="2.5">
+<g id="pt"><path d="M200 120 C222 150 222 176 200 196 C178 176 178 150 200 120Z"/></g>
+<use href="#pt" transform="rotate(45 200 200)"/><use href="#pt" transform="rotate(90 200 200)"/><use href="#pt" transform="rotate(135 200 200)"/><use href="#pt" transform="rotate(180 200 200)"/><use href="#pt" transform="rotate(225 200 200)"/><use href="#pt" transform="rotate(270 200 200)"/><use href="#pt" transform="rotate(315 200 200)"/></g>
+<circle cx="200" cy="200" r="26" fill="url(#au)"/>
+<text x="200" y="212" text-anchor="middle" font-size="34" fill="#0a1a45" font-family="serif">ॐ</text>
+</svg>
+<h1>श्री हरि विष्णु</h1>
+<p class="sub">जगत के पालनहार · लक्ष्मीपति · भक्तों के रक्षक</p>
+<div class="mantra-line">ॐ नमो भगवते वासुदेवाय</div><br>
+<a class="btn" href="#mantra">मंत्र जाप करें</a>
+</div></header>
+
+<section id="darshan"><div class="wrap">
+<div class="title"><h2>दिव्य दर्शन</h2><i></i></div>
+<figure class="fig"><svg viewBox="0 0 800 420" role="img" aria-label="शेषनाग पर विराजमान भगवान विष्णु और माता लक्ष्मी"><rect width="800" height="420" fill="#050d24"/><circle cx="640" cy="80" r="170" fill="url(#g)"/><g fill="#f6dc95"><circle cx="90" cy="60" r="2"/><circle cx="200" cy="110" r="1.6"/><circle cx="330" cy="50" r="2"/><circle cx="470" cy="90" r="1.6"/><circle cx="60" cy="170" r="1.6"/></g><path d="M0 340 Q100 320 200 340 T400 340 T600 340 T800 340 V420 H0Z" fill="#0b2260"/><path d="M0 372 Q100 352 200 372 T400 372 T600 372 T800 372" fill="none" stroke="#e8b84a" stroke-opacity=".5" stroke-width="2"/><path d="M150 330 C260 300 330 372 440 330 C540 295 610 360 700 320" fill="none" stroke="#cfd8f5" stroke-width="34" stroke-linecap="round"/><path d="M150 330 C260 300 330 372 440 330 C540 295 610 360 700 320" fill="none" stroke="#8ea2dd" stroke-width="3" stroke-dasharray="2 14" stroke-linecap="round"/><g fill="#cfd8f5" stroke="#e8b84a" stroke-width="2"><ellipse cx="560" cy="215" rx="22" ry="42" transform="rotate(-35 560 215)"/><ellipse cx="590" cy="185" rx="22" ry="44" transform="rotate(-15 590 185)"/><ellipse cx="625" cy="175" rx="24" ry="46"/><ellipse cx="660" cy="185" rx="22" ry="44" transform="rotate(15 660 185)"/><ellipse cx="690" cy="215" rx="22" ry="42" transform="rotate(35 690 215)"/></g><rect x="290" y="262" width="320" height="38" rx="19" fill="#2f5fd0"/><rect x="390" y="262" width="130" height="38" fill="#e8b84a"/><ellipse cx="282" cy="285" rx="14" ry="10" fill="#2f5fd0"/><path d="M445 262 Q438 232 450 212" stroke="#e8b84a" fill="none" stroke-width="3"/><ellipse cx="450" cy="204" rx="16" ry="11" fill="#f58ab0" stroke="#e8b84a"/><circle cx="625" cy="250" r="40" fill="none" stroke="#f6dc95" stroke-opacity=".8" stroke-width="2"/><circle cx="625" cy="250" r="26" fill="#2f5fd0"/><path d="M600 234 L610 205 L625 222 L640 205 L650 234Z" fill="#e8b84a"/><path d="M165 332 Q175 252 205 246 Q235 252 245 332Z" fill="#c2305b" stroke="#e8b84a" stroke-width="2"/><path d="M235 285 L272 290" stroke="#f0c58a" stroke-width="8" stroke-linecap="round"/><ellipse cx="172" cy="280" rx="12" ry="16" fill="#f58ab0" stroke="#e8b84a"/><circle cx="205" cy="224" r="31" fill="none" stroke="#f6dc95" stroke-opacity=".7"/><circle cx="205" cy="224" r="19" fill="#f0c58a"/><path d="M190 212 L196 190 L205 204 L214 190 L220 212Z" fill="#e8b84a"/><g fill="#e8b84a" font-size="22" text-anchor="middle"><text x="205" y="398">माता लक्ष्मी</text><text x="450" y="398">श्री विष्णु</text><text x="660" y="398">शेषनाग</text></g></svg><figcaption><b>शेषशायी विष्णु और माता लक्ष्मी</b>क्षीरसागर में शेषनाग की शय्या पर योगनिद्रा में विराजमान भगवान विष्णु और उनके चरणों की सेवा करतीं माता लक्ष्मी। नाभि से निकले कमल पर ब्रह्माजी प्रकट होते हैं।</figcaption></figure>
+<figure class="fig"><svg viewBox="0 0 800 480" role="img" aria-label="चार हाथों में चक्र, शंख, गदा और पद्म धारण किए भगवान विष्णु"><rect width="800" height="480" fill="#050d24"/><circle cx="400" cy="190" r="200" fill="url(#g)"/><circle cx="400" cy="190" r="155" fill="none" stroke="url(#au)" stroke-width="3" stroke-dasharray="3 9"/><circle cx="400" cy="190" r="120" fill="none" stroke="#e8b84a" stroke-opacity=".5"/><g fill="#f58ab0" stroke="#e8b84a" stroke-width="2"><ellipse cx="300" cy="452" rx="70" ry="22"/><ellipse cx="500" cy="452" rx="70" ry="22"/><ellipse cx="400" cy="442" rx="90" ry="26" fill="#ffb3cf"/></g><path d="M335 330 H465 L480 435 H320Z" fill="#e8b84a"/><path d="M340 150 Q330 250 345 335 H455 Q470 250 460 150Z" fill="#2f5fd0"/><g stroke="#2f5fd0" stroke-width="20" stroke-linecap="round" fill="none"><path d="M455 175 L560 150"/><path d="M345 175 L240 150"/><path d="M455 240 L540 320"/><path d="M345 240 L260 320"/></g><path d="M350 172 Q400 280 450 172" fill="none" stroke="#f6dc95" stroke-width="6" stroke-dasharray="1 9" stroke-linecap="round"/><circle cx="400" cy="124" r="38" fill="#2f5fd0"/><path d="M362 104 L372 58 L400 88 L428 58 L438 104Z" fill="#e8b84a"/><g transform="translate(578 128)" fill="none" stroke="url(#au)" stroke-width="3"><circle r="38"/><circle r="12" fill="#e8b84a"/><path d="M0-38V38M-38 0H38M-27-27L27 27M27-27L-27 27"/></g><g transform="translate(225 122) rotate(-20)"><path d="M0-40C40-30 40 20 0 40C-40 20-40-30 0-40Z" fill="#fff6dc" stroke="#e8b84a" stroke-width="3"/><path d="M0-36V36" stroke="#e8b84a"/></g><rect x="544" y="300" width="12" height="120" rx="6" fill="#e8b84a"/><circle cx="550" cy="292" r="24" fill="url(#au)"/><g transform="translate(255 316)" stroke="#e8b84a" stroke-width="2"><ellipse cx="-16" cy="-6" rx="12" ry="26" transform="rotate(-30)" fill="#f58ab0"/><ellipse cx="16" cy="-6" rx="12" ry="26" transform="rotate(30)" fill="#f58ab0"/><ellipse cy="-12" rx="14" ry="30" fill="#ffb3cf"/></g><g fill="#f6dc95" font-size="22" text-anchor="middle"><text x="665" y="110">सुदर्शन चक्र</text><text x="140" y="110">पाञ्चजन्य शंख</text><text x="660" y="400">कौमोदकी गदा</text><text x="140" y="400">पद्म</text></g></svg><figcaption><b>चतुर्भुज श्री हरि</b>कमल के आसन पर खड़े पीतांबरधारी भगवान विष्णु, जिनके चार हाथों में सुदर्शन चक्र, शंख, गदा और पद्म सुशोभित हैं।</figcaption></figure>
+<figure class="fig"><svg id="ring" viewBox="0 0 800 520" role="img" aria-label="भगवान विष्णु के दस अवतार"><rect width="800" height="520" fill="#050d24"/></svg><figcaption><b>दशावतार मंडल</b>मत्स्य से कल्कि तक श्री हरि के दस अवतार, जो चक्र की भाँति धर्म की रक्षा के लिए युग-युग में प्रकट होते हैं।</figcaption></figure>
+<figure class="fig"><svg viewBox="0 0 800 450" role="img" aria-label="कुरुक्षेत्र में श्रीकृष्ण अर्जुन को गीता का उपदेश देते हुए"><rect width="800" height="450" fill="#07143a"/><circle cx="450" cy="130" r="230" fill="url(#g)"/><circle cx="450" cy="125" r="72" fill="#f6dc95" opacity=".85"/><path d="M0 362 Q200 332 400 362 T800 362 V450 H0Z" fill="#0b2260"/><g id="hs" fill="#f4f1ff"><ellipse cx="250" cy="320" rx="80" ry="30"/><path d="M180 310 L150 250 L172 244 L205 300Z"/><ellipse cx="148" cy="248" rx="26" ry="12" transform="rotate(25 148 248)"/><path d="M200 345V385M240 345V385M280 345V385M310 340V385" stroke="#f4f1ff" stroke-width="8" stroke-linecap="round"/></g><use href="#hs" x="-34" y="-20" opacity=".75"/><path d="M320 320H400" stroke="#e8b84a" stroke-width="6"/><path d="M390 300H590L570 345H410Z" fill="#12307a" stroke="url(#au)" stroke-width="3"/><g transform="translate(480 372)" fill="none" stroke="url(#au)" stroke-width="4"><circle r="56"/><circle r="10" fill="#e8b84a"/><path d="M0-56V56M-56 0H56M-40-40L40 40M40-40L-40 40"/></g><path d="M390 300V215L350 230L390 245Z" fill="#e8b84a"/><path d="M445 205Q435 262 445 302H495Q505 262 495 205Z" fill="#2f5fd0"/><path d="M445 262H495L500 302H440Z" fill="#e8b84a"/><path d="M445 228L405 252L330 296" stroke="#2f5fd0" stroke-width="12" stroke-linecap="round" fill="none"/><path d="M495 228L552 206" stroke="#2f5fd0" stroke-width="12" stroke-linecap="round"/><circle cx="470" cy="176" r="38" fill="none" stroke="#f6dc95" stroke-width="2"/><circle cx="470" cy="176" r="26" fill="#2f5fd0"/><path d="M450 162L456 134L470 150L484 134L490 162Z" fill="#e8b84a"/><ellipse cx="484" cy="128" rx="5" ry="14" fill="#1fb89a"/><path d="M615 352Q620 288 650 282Q680 288 685 352Z" fill="#7a2330" stroke="#e8b84a" stroke-width="2"/><circle cx="650" cy="262" r="20" fill="#e0a46a"/><path d="M633 249L638 228L650 241L662 228L667 249Z" fill="#e8b84a"/><ellipse cx="628" cy="296" rx="8" ry="12" fill="#e0a46a"/><path d="M720 262Q762 340 720 414" fill="none" stroke="#e8b84a" stroke-width="5"/><path d="M720 262V414" stroke="#f6dc95" stroke-width="1.5"/><g fill="#f6dc95" font-size="22" text-anchor="middle"><text x="480" y="442">श्रीकृष्ण</text><text x="652" y="400">अर्जुन</text><text x="120" y="50">कुरुक्षेत्र</text></g></svg><figcaption><b>गीता उपदेश</b>कुरुक्षेत्र के रणक्षेत्र में रथ पर विराजमान श्रीकृष्ण अर्जुन को गीता का ज्ञान देते हैं: “यदा यदा हि धर्मस्य ग्लानिर्भवति भारत।”</figcaption></figure>
+</div></section>
+
+<section id="parichay"><div class="wrap">
+<div class="title"><h2>भगवान विष्णु का परिचय</h2><i></i></div>
+<div class="about">
+<div>
+<p>भगवान विष्णु हिन्दू धर्म के त्रिदेवों में पालनकर्ता हैं। ब्रह्मा सृष्टि की रचना करते हैं, विष्णु उसका पालन करते हैं और महेश (शिव) संहार करते हैं।</p>
+<p>उनका निवास क्षीरसागर में माना जाता है, जहाँ वे शेषनाग की शय्या पर विराजमान रहते हैं। माता लक्ष्मी उनकी अर्धांगिनी हैं और गरुड़ उनके वाहन हैं। जब-जब धर्म की हानि होती है, वे अवतार लेकर संसार की रक्षा करते हैं।</p>
+<p>श्रीमद्भगवद्गीता में भगवान श्रीकृष्ण कहते हैं कि धर्म की स्थापना के लिए वे युग-युग में प्रकट होते हैं।</p>
+</div>
+<div class="names"><h3>प्रिय नाम</h3>
+<span>हरि</span><span>नारायण</span><span>वासुदेव</span><span>माधव</span><span>गोविंद</span><span>केशव</span><span>पद्मनाभ</span><span>जनार्दन</span><span>श्रीपति</span>
+<p style="color:var(--mute);font-size:1rem;margin:14px 0 0">विष्णु सहस्रनाम में उनके एक हज़ार नामों का वर्णन है।</p></div>
+</div></div></section>
+
+<section id="pratik"><div class="wrap">
+<div class="title"><h2>दिव्य प्रतीक</h2><i></i></div>
+<div class="grid">
+<div class="card"><div class="ic">🐚</div><h3>शंख — पाञ्चजन्य</h3><p>ॐ की ध्वनि का प्रतीक, जो शुभ आरंभ और सत्य की घोषणा करता है।</p></div>
+<div class="card"><div class="ic">☸️</div><h3>चक्र — सुदर्शन</h3><p>काल और धर्म का चक्र, जो अधर्म का नाश करता है।</p></div>
+<div class="card"><div class="ic">🔱</div><h3>गदा — कौमोदकी</h3><p>शक्ति और कर्तव्य-पालन का प्रतीक, जो अहंकार को चूर करती है।</p></div>
+<div class="card"><div class="ic">🪷</div><h3>पद्म — कमल</h3><p>पवित्रता और मोक्ष का प्रतीक। कीचड़ में खिलकर भी कमल निर्मल रहता है।</p></div>
+<div class="card"><div class="ic">🦅</div><h3>गरुड़ — वाहन</h3><p>भक्ति, गति और अटूट सेवा के प्रतीक पक्षीराज गरुड़।</p></div>
+<div class="card"><div class="ic">💎</div><h3>कौस्तुभ मणि</h3><p>वक्षस्थल पर सुशोभित दिव्य मणि और श्रीवत्स चिह्न।</p></div>
+</div></div></section>
+
+<section id="dashavatar"><div class="wrap">
+<div class="title"><h2>दशावतार</h2><i></i><p style="color:var(--mute);margin:14px auto 0;max-width:640px">पालनकर्ता श्री हरि के दस प्रमुख अवतार, जिन्होंने अलग-अलग युगों में धर्म की रक्षा की।</p></div>
+<div class="avatars">
+<div class="av"><span class="n">१</span><div class="em">🐟</div><h3>मत्स्य</h3><small>सत्ययुग</small><p>प्रलय में वेदों और मनु की रक्षा की।</p></div>
+<div class="av"><span class="n">२</span><div class="em">🐢</div><h3>कूर्म</h3><small>सत्ययुग</small><p>समुद्र मंथन में मंदराचल को अपनी पीठ पर धारण किया।</p></div>
+<div class="av"><span class="n">३</span><div class="em">🐗</div><h3>वराह</h3><small>सत्ययुग</small><p>हिरण्याक्ष का वध कर पृथ्वी को जल से बाहर निकाला।</p></div>
+<div class="av"><span class="n">४</span><div class="em">🦁</div><h3>नृसिंह</h3><small>सत्ययुग</small><p>भक्त प्रह्लाद की रक्षा के लिए हिरण्यकशिपु का अंत किया।</p></div>
+<div class="av"><span class="n">५</span><div class="em">🧘</div><h3>वामन</h3><small>त्रेतायुग</small><p>तीन पग भूमि मांगकर राजा बलि का अहंकार दूर किया।</p></div>
+<div class="av"><span class="n">६</span><div class="em">🪓</div><h3>परशुराम</h3><small>त्रेतायुग</small><p>अत्याचारी राजाओं के विरुद्ध धर्म की स्थापना की।</p></div>
+<div class="av"><span class="n">७</span><div class="em">🏹</div><h3>श्रीराम</h3><small>त्रेतायुग</small><p>मर्यादा पुरुषोत्तम, जिन्होंने रावण का वध कर रामराज्य स्थापित किया।</p></div>
+<div class="av"><span class="n">८</span><div class="em">🪈</div><h3>श्रीकृष्ण</h3><small>द्वापरयुग</small><p>गीता के उपदेशक, लीलाधर और धर्म के मार्गदर्शक।</p></div>
+<div class="av"><span class="n">९</span><div class="em">☸️</div><h3>बुद्ध</h3><small>कलियुग</small><p>करुणा और अहिंसा का मार्ग दिखाया। कुछ परंपराओं में यहाँ बलराम गिने जाते हैं।</p></div>
+<div class="av"><span class="n">१०</span><div class="em">🐎</div><h3>कल्कि</h3><small>भविष्य</small><p>कलियुग के अंत में श्वेत अश्व पर आकर अधर्म का नाश करेंगे।</p></div>
+</div></div></section>
+
+<section id="mantra"><div class="wrap">
+<div class="japa">
+<p style="color:var(--gold-soft);margin-bottom:4px">द्वादशाक्षर महामंत्र</p>
+<p class="big">ॐ नमो भगवते वासुदेवाय</p>
+<p>इस मंत्र का अर्थ है: “मैं सर्वव्यापी भगवान वासुदेव को नमन करता हूँ।” शांत मन से, सुबह या शाम, इसका जाप करें। माला में १०८ बार जपना शुभ माना जाता है।</p>
+<div class="count" id="c" aria-live="polite">०</div>
+<p style="margin:0;font-size:.95rem">जाप की गिनती (१०८ में एक माला पूरी)</p>
+<div class="row"><button class="btn" id="add" type="button">जाप करें 🙏</button><button class="btn ghost" id="rst" type="button">फिर से शुरू करें</button></div>
+<p id="msg" style="margin-top:14px;color:var(--gold-soft);min-height:1.8em"></p>
+</div></div></section>
+
+<footer><b>शान्ताकारं भुजगशयनं पद्मनाभं सुरेशम्</b>
+<p style="margin:6px 0 0">हरि ॐ · जय श्री हरि · जय जगन्नाथ</p></footer>
+
+<script>
+(function(){
+  var n=0,c=document.getElementById('c'),m=document.getElementById('msg');
+  var d='०१२३४५६७८९';
+  function hi(x){return String(x).replace(/\d/g,function(k){return d[k]})}
+  try{var s=parseInt(localStorage.getItem('japa')||'0',10);if(s>0)n=s}catch(e){}
+  function show(){c.textContent=hi(n);var mala=Math.floor(n/108);m.textContent=mala>0?('माला पूर्ण: '+hi(mala)+' · जय श्री हरि!'):''}
+  function save(){try{localStorage.setItem('japa',String(n))}catch(e){}}
+  document.getElementById('add').onclick=function(){n++;save();show()};
+  document.getElementById('rst').onclick=function(){n=0;save();show()};
+  show();
+})();
+</script>
+<script>
+(function(){
+  var a=[['🐟','मत्स्य'],['🐢','कूर्म'],['🐗','वराह'],['🦁','नृसिंह'],['🧘','वामन'],['🪓','परशुराम'],['🏹','श्रीराम'],['🪈','श्रीकृष्ण'],['☸️','बुद्ध'],['🐎','कल्कि']];
+  var L='',N='';
+  a.forEach(function(v,i){
+    var t=(-90+i*36)*Math.PI/180,x=Math.round(400+310*Math.cos(t)),y=Math.round(260+195*Math.sin(t));
+    L+='<path d="M400 260L'+x+' '+y+'" stroke="#e8b84a" stroke-opacity=".5" stroke-dasharray="3 8"/>';
+    N+='<circle cx="'+x+'" cy="'+y+'" r="50" fill="#0a1a45" stroke="url(#au)" stroke-width="2.5"/><text x="'+x+'" y="'+(y-4)+'" font-size="32" text-anchor="middle">'+v[0]+'</text><text x="'+x+'" y="'+(y+28)+'" font-size="16" fill="#f6dc95" text-anchor="middle">'+v[1]+'</text>';
+  });
+  var s='<circle cx="400" cy="260" r="210" fill="url(#g)"/>'+L+'<circle cx="400" cy="260" r="72" fill="#0a1a45" stroke="url(#au)" stroke-width="3"/><text x="400" y="262" font-size="48" fill="#e8b84a" text-anchor="middle">ॐ</text><text x="400" y="296" font-size="20" fill="#f6dc95" text-anchor="middle">श्री हरि</text>'+N;
+  document.getElementById('ring').insertAdjacentHTML('beforeend',s);
+})();
+</script>
+</body>
+</html>
